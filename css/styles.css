@@ -1,0 +1,94 @@
+
+/* ==========================
+   1. RESET
+   ========================== */
+
+
+/* ==========================
+   2. DESIGN TOKENS
+   ========================== */
+:root {
+    /* Color */
+    --color-accent: #4d1979;
+    --color-accent-strong: #321052;
+    --color-text: #172033;
+    --color-muted: #657186;
+    --color-border: #d9dfeb;
+    --color-bg: #f7f8fb;
+    --color-surface: #ffffff;
+    --color-surface-alt: #f1f5f9;
+}
+
+/* ==========================
+   3. BASE
+   ========================== */
+
+   
+
+/* ==========================
+   4. LAYOUT
+   ========================== */
+
+
+
+
+/* ==========================
+   5. HEADER
+   ========================== */
+
+
+/* ==========================
+   6. SECTIONS
+   ========================== */
+
+
+/* ==========================
+   7. FORMS
+   ========================== */
+label {
+    display: block;
+    margin-bottom: var(--space-sm);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    font: inherit;
+    margin-bottom: var(--space-md);
+}
+
+/* ==========================
+   8. BUTTONS
+   ========================== */
+
+
+/* ==========================
+   9. SEARCH
+   ========================== */
+
+/* ==========================
+   10. CARDS
+   ========================== */
+.favorites-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+}
+
+.empty-message {
+    grid-column: 1 / -1;
+}
+
+/* ==========================
+   11. FOOTER
+   ========================== */
+
+/* ==========================
+   12. RESPONSIVE
+   ========================== */
+@media (min-width: 768px) {
+    .favorites-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
