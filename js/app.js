@@ -1,20 +1,21 @@
-let today = new Date().toLocaleDateString();
+function greetFavorite(placeName, rating) {
+    console.log(placeName + ' has ' + rating + ' stars!');
+}
 
-let myFavorite = {
-    name: 'Starbucks on University Drive',
-    category: 'coffee',
-    rating: 5,
-    notes: 'Great study spot with fast wifi',
-    dateAdded: today
-};
+greetFavorite('Starbucks', 5);
 
-let displayText = myFavorite.name + ' - Rating: ' + myFavorite.rating + '/5';
 
-console.log(myFavorite);
-console.log(displayText);
+const nameInput = document.getElementById('name');
 
-console.log(typeof myFavorite.name);
-console.log(typeof myFavorite.category);
-console.log(typeof myFavorite.rating);
-console.log(typeof myFavorite.notes);
-console.log(typeof myFavorite.dateAdded);
+console.log(nameInput.value);
+
+
+const practiceForm = document.getElementById('add-favorite-form');
+
+function handleSubmit(event) {
+    event.preventDefault();
+
+    console.log('You typed: ' + nameInput.value);
+}
+
+practiceForm.addEventListener('submit', handleSubmit);
