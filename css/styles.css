@@ -2,6 +2,17 @@
 /* ==========================
    1. RESET
    ========================== */
+* {
+   box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p {
+   margin: 0;
+}
+
 
 
 /* ==========================
@@ -29,24 +40,56 @@
 /* ==========================
    3. BASE
    ========================== */
-
+body {
+   font-family: Arial, sans-serif;
+   background-color: var(--color-bg);
+   color: var(--color-text);
+   line-height: 1.5;
+}
    
 
 /* ==========================
    4. LAYOUT
    ========================== */
-
+main {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: var(--space-lg);
+}
 
 
 
 /* ==========================
    5. HEADER
    ========================== */
-
+header {
+   background-color: var(--color-accent);
+   color: var(--color-surface);
+   text-align: center;
+   padding: 2rem var(--space-lg);
+}
+header p {
+   margin-top: var(--space-sm);
+}
 
 /* ==========================
    6. SECTIONS
    ========================== */
+section {
+   margin-bottom: 2rem;
+}
+
+.add-section,
+.controls-section {
+   background-color: var(--color-surface);
+   padding: var(--space-lg);
+   border-radius: var(--radius-md);
+   box-shadow: var(--shadow-sm);
+}
+
+h2 {
+   margin-bottom: var(--space-md);
+}
 
 
 /* ==========================
@@ -104,6 +147,13 @@ button {
    9. SEARCH
    ========================== */
 
+.controls-section {
+   display: grid;
+   gap: var(--space-md);
+}
+
+
+
 /* ==========================
    10. CARDS
    ========================== */
@@ -128,6 +178,15 @@ button {
 /* ==========================
    11. FOOTER
    ========================== */
+
+footer {
+   text-align: center;
+   color: var(--color-muted);
+   padding: var(--space-lg);
+}
+
+
+
 
 /* ==========================
    12. RESPONSIVE
